@@ -1,0 +1,38 @@
+header {
+    margin: 0;
+    padding: 2em 0 1em 0;
+    text-align: center;
+    background: #450084;
+    font-family: 'Handwriting', sans-serif;
+    font-size: 1.5em;
+
+    & h1 {
+        color: #fff;
+        font-size: 4em;
+        margin: 0;
+    }
+
+    & a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Navbar styles */
+nav {
+    & ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    & li {
+        display: inline-block;
+        font-size: 80%;
+        font-weight: bold;
+        margin: 0 10px;
+    }
+}
