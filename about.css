@@ -1,0 +1,15 @@
+#about {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
+#about-headshot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#about-text {
+    margin: 30px;
+}
