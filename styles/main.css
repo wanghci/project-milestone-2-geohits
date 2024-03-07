@@ -16,10 +16,6 @@ header {
         color: #fff;
         text-decoration: none;
     }
-
-    & a:hover {
-        text-decoration: underline;
-    }
 }
 
 /* Navbar styles */
@@ -34,5 +30,9 @@ nav {
         font-size: 80%;
         font-weight: bold;
         margin: 0 10px;
+    }
+
+    & a:hover {
+        text-decoration: underline;
     }
 }
