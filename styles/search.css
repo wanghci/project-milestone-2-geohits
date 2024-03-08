@@ -34,7 +34,11 @@
 }
   
 .main-search-button{
-    background: #CF9FFF;
+    background: #450084;
+}
+
+.main-search-button:hover{
+  background: #CF9FFF;
 }
   
 .main-search-button {
