@@ -13,3 +13,8 @@
 #about-text {
     margin: 30px;
 }
+
+#about-title {
+    text-align: center;
+    font-size: 3rem;
+}

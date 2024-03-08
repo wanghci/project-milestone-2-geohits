@@ -13,3 +13,8 @@
     list-style-type: none;
     font-size: 125%;
 }
+
+#song-title {
+    text-align: center;
+    font-size: 3rem;
+}
