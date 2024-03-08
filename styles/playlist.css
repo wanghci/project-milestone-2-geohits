@@ -9,10 +9,21 @@
     font-size: 3rem;
 }
 
-#playlist ul{
+#playlist ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+#playlist li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#playlist li img{
+    margin-right: 1rem;
 }
