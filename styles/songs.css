@@ -1,0 +1,15 @@
+#song-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#song-cover {
+    width: 35%;
+}
+
+#song-facts li {
+    list-style-type: none;
+    font-size: 125%;
+}
