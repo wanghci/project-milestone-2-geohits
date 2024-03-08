@@ -19,13 +19,25 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <div class="main-search-input-wrap">
-      <div class="main-search-input fl-wrap">
-        <div class="main-search-input-item">
-          <input type="text"  value="" placeholder="Search Country...">
+  <main id="home">
+    <form id="search">
+      <div class="main-search-input-wrap">
+        <div class="main-search-input fl-wrap">
+          <div class="main-search-input-item">
+            <input type="text"  value="" placeholder="Search Country...">
+          </div>
+          <button type="submit" class="main-search-button">Search</button>
         </div>
-        <button type="submit" class="main-search-button">Search</button>
+      </div>
+    </form>
+    <div id="search-results">
+      <ul id="header-results">
+        <li><h2>Location</h2></li>
+        <li><h2>Trending Song</h2></li>
+      </ul>
+      <div id="image-results">
+        <img id="country-results" src="images/location.jpeg" alt="country-results">
+        <img id="song-results" src="images/songcover.jpeg" alt="country-results">
       </div>
     </div>
   </main>

@@ -39,3 +39,31 @@ nav {
         text-decoration: underline;
     }
 }
+
+#home {
+    display: flex;
+    flex-direction: column;
+}
+
+#search-results {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#image-results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#image-results img {
+    width: 350px;
+}
