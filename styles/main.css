@@ -67,3 +67,9 @@ nav {
 #image-results img {
     width: 350px;
 }
+
+@media (max-width: 375px) {
+    #header-results, #image-results {
+        flex-direction: column;
+    }
+}

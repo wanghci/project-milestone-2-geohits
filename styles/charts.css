@@ -39,3 +39,8 @@
     width: 5rem;
 }
 
+@media (max-width: 375px) {
+    #chart {
+        flex-direction: column;
+    }
+}

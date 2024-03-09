@@ -18,3 +18,9 @@
     text-align: center;
     font-size: 3rem;
 }
+
+@media (max-width: 600px) {
+    #about-headshot {
+        flex-direction: column;
+    }
+}
