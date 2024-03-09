@@ -19,7 +19,8 @@ header {
     & a {
         color: #fff;
         text-decoration: none;
-    }}
+    }
+}
 
 nav {
     & ul {
@@ -36,7 +37,8 @@ nav {
 
     & a:hover {
         text-decoration: underline;
-    }}
+    }
+}
 
 #home {
     display: flex;
