@@ -18,4 +18,3 @@
 * You will need to make ALL pages responsive based on width (375 is also an extreme size… you should change the layout at < 700px or so)
 * Good work separating things into stylesheets!
 * You may want a home button too, since it may not be clear to the user to click on the name of the site
-
