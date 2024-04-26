@@ -3,46 +3,85 @@
 <head>
   <title>GeoHits - Home</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/search.css">
-  <link href="https://fonts.cdnfonts.com/css/handwriting" rel="stylesheet">
+  <link rel="stylesheet" href="styles/head_footer.css">
+  <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
   <header>
-    <h1><a href="index.html">GEO HITS</a></h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="songs.html">Song</a></li>
-        <li><a href="charts.html">Country Chart</a></li>
-        <li><a href="playlists.html">Playlist</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main id="home">
-    <form id="search">
-      <div class="main-search-input-wrap">
-        <div class="main-search-input fl-wrap">
-          <div class="main-search-input-item">
-            <input type="text"  value="" placeholder="Search Country...">
-          </div>
-          <button type="submit" class="main-search-button">Search</button>
+    <nav id="desktop-nav">
+      <div class="logo">GeoHits</div>
+        <div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="songs.html">Song</a></li>
+              <li><a href="charts.html">Country Chart</a></li>
+              <li><a href="playlists.html">Playlist</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
         </div>
+    </nav>
+    <nav id="hamburger-nav" role="secondary">
+      <div class="logo">GeoHits</div>
+      <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="menu-links">
+              <ul>
+                  <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                  <li><a href="songs.html" onclick="toggleMenu()">Song</a></li>
+                  <li><a href="charts.html" onclick="toggleMenu()">Country Chart</a></li>
+                  <li><a href="playlists.html" onclick="toggleMenu()">PlayList</a></li>
+                  <li><a href="about.html" onclick="toggleMenu()">About Us</a></li>
+              </ul>
+          </div>
       </div>
-    </form>
-    <div id="search-results">
-      <ul id="header-results">
-        <li><h2>Location</h2></li>
-        <li><h2>Trending Song</h2></li>
-      </ul>
-      <div id="image-results">
-        <img id="country-results" src="images/location.jpeg" alt="country-results">
-        <img id="song-results" src="images/songcover.jpeg" alt="country-results">
-      </div>
-    </div>
+  </nav>
+  </header>
+  <main>
+    <section id="home">
+      <p class="section_text">Search Countries For Their Trending</p>
+        <h1 class="title">Songs</h1>
+        <div class="section-container">
+          <div class="sub-container">
+            <div class="info-containers">
+              <div class="details-container">
+                <h2 class="experience-sub-title">Country</h2>
+                <img src="./images/location.jpeg" alt="Country Default Picture" class="info-pic">
+                <form class="search-bar">
+                  <input type="text" placeholder="Search Your Favorite Country" class="search">
+                  <button type="submit" class="btn btn-color-1">Search</button>
+                </form>
+              </div>
+              <div class="details-container">
+                <h2 class="experience-sub-title">Song</h2>
+                <img src="./images/songcover.jpeg" alt="Song Default Picture" class="info-pic">
+                <div class="btn-container">
+                  <button class="btn btn-color-1" type="button" onclick="''">Add To PlayList</button>
+                  <button class="btn btn-color-2" type="button" onclick="''">Remove From PlayList</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
   </main>
   <footer>
-  </footer>
+    <nav role="footer">
+        <div class="navs-links-containers">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html">Song</a></li>
+            <li><a href="charts.html">Country Chart</a></li>
+            <li><a href="playlists.html">Playlist</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 GeoHits. All Rights Reserved.</p>
+</footer>
+  <script src="script.js"></script>
 </body>
 </html>
