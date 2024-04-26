@@ -1,8 +1,57 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .sub-containers {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
+    }
+    .section-container {
+        display: block;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .info-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+    footer {
+        height: 40vh;
+    }
+    .info-containers, .contact-info-upper-container, btn-container {
+        flex-wrap: wrap;
+    }
+    .nav-links li a {
+        font-size: 1rem;
     }
 }

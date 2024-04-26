@@ -9,6 +9,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+header {
+    background: #8d3f9b;
+}
+
 html {
     scroll-behavior: smooth;
 }
