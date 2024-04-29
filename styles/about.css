@@ -1,11 +1,11 @@
-/* Home Page */
-
 section {
     padding-top: 4vh;
     height: 65vh;
     margin: 0 10rem;
     box-sizing: border-box;
-    min-height: fit-content;  
+    min-height: fit-content; 
+    gap: 4rem; 
+    height: 80%;
 }
 
 #about {
@@ -21,17 +21,7 @@ section {
     text-align: center;
 }
 
-.section-container {
-    gap: 4rem;
-    height: 80%;
-}
-
-.sub-container {
-    justify-content: center;
-    flex-direction: column;
-}
-
-.info-containers, .sub-container {
+.info-containers {
     display: flex;
 }
 

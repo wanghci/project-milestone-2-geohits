@@ -3,38 +3,79 @@
 <head>
   <title>GeoHits - Songs</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/head_footer.css">
   <link rel="stylesheet" href="styles/songs.css">
-  <link href="https://fonts.cdnfonts.com/css/handwriting" rel="stylesheet">
+  <link rel="stylesheet" href="styles/songsmediaqueries.css">
 </head>
 <body>
   <header>
-    <h1><a href="index.html">GEO HITS</a></h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="songs.html">Song</a></li>
-        <li><a href="charts.html">Country Chart</a></li>
-        <li><a href="playlists.html">Playlist</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
+    <nav id="desktop-nav">
+      <div class="logo">GeoHits</div>
+        <div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="songs.html">Song</a></li>
+              <li><a href="charts.html">Country Chart</a></li>
+              <li><a href="playlists.html">Playlist</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
     </nav>
+    <nav id="hamburger-nav" role="secondary">
+      <div class="logo">GeoHits</div>
+      <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="menu-links">
+              <ul>
+                  <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                  <li><a href="songs.html" onclick="toggleMenu()">Song</a></li>
+                  <li><a href="charts.html" onclick="toggleMenu()">Country Chart</a></li>
+                  <li><a href="playlists.html" onclick="toggleMenu()">PlayList</a></li>
+                  <li><a href="about.html" onclick="toggleMenu()">About Us</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
   </header>
   <main>
-    <h2 id="song-title">Song Information</h2>
-    <div id="song-info">
-      <img id="song-cover" src="images/songcover.jpeg" alt="default song cover">
-      <ul id="song-facts">
-        <li><p>Song Title:</p></li>
-        <li><p>Artist:</p></li>
-        <li><p>Length:</p></li>
-        <li><p>Genre:</p></li>
-        <li><p>Streams:</p></li>
-        <li><p>Release Date:</p></li>
-      </ul>
-    </div>
+    <section id="songs">
+      <p class="sub-title">Information About Your Trending</p>
+      <h1 class="title">Song</h1>
+          <div class="info-containers">
+            <div class="details-container-pic">
+              <img id="song-cover" src="images/songcover.jpeg" alt="default song cover" class="info-pic">
+            </div>
+            <div class="details-container">
+              <ul id="song-facts">
+                <li><p>Song Title:</p></li>
+                <li><p>Artist:</p></li>
+                <li><p>Length:</p></li>
+                <li><p>Genre:</p></li>
+                <li><p>Streams:</p></li>
+                <li><p>Release Date:</p></li>
+              </ul>
+            </div>
+          </div>
+    </section>
   </main>
   <footer>
+    <nav role="footer">
+      <div class="navs-links-containers">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="songs.html">Song</a></li>
+          <li><a href="charts.html">Country Chart</a></li>
+          <li><a href="playlists.html">Playlist</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 GeoHits. All Rights Reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

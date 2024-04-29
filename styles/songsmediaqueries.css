@@ -1,21 +1,9 @@
-@media screen and (max-width: 1500px) {
-    .info-containers {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-
-
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
-    }
-    .section-container {
-        display: block;
     }
     section {
         height: fit-content;
@@ -26,13 +14,20 @@
     .info-containers {
         margin-top: 0;
     }
-    .pictures {
+    .info-containers {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    .foot-nav {
+        display: flex;
+    }
+    .info-containers {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     .logo {
         font-size: 1.5rem;
     }
