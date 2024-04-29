@@ -2,7 +2,7 @@
 
 section {
     padding-top: 4vh;
-    height: 65vh;
+    height: 80vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;  
@@ -19,6 +19,12 @@ section {
 .title {
     font-size: 2rem;
     text-align: center;
+}
+
+.sub-title {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
 }
 
 .section-container {

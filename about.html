@@ -3,39 +3,82 @@
 <head>
   <title>GeoHits - About</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/head_footer.css">
   <link rel="stylesheet" href="styles/about.css">
-  <link href="https://fonts.cdnfonts.com/css/handwriting" rel="stylesheet">
+  <link rel="stylesheet" href="styles/aboutmediaqueries.css">
 </head>
 <body>
   <header>
-    <h1><a href="index.html">GEO HITS</a></h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="songs.html">Song</a></li>
-        <li><a href="charts.html">Country Chart</a></li>
-        <li><a href="playlists.html">Playlist</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
+    <nav id="desktop-nav">
+      <div class="logo">GeoHits</div>
+        <div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="songs.html">Song</a></li>
+              <li><a href="charts.html">Country Chart</a></li>
+              <li><a href="playlists.html">Playlist</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
     </nav>
+    <nav id="hamburger-nav" role="secondary">
+      <div class="logo">GeoHits</div>
+      <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="menu-links">
+              <ul>
+                  <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                  <li><a href="songs.html" onclick="toggleMenu()">Song</a></li>
+                  <li><a href="charts.html" onclick="toggleMenu()">Country Chart</a></li>
+                  <li><a href="playlists.html" onclick="toggleMenu()">PlayList</a></li>
+                  <li><a href="about.html" onclick="toggleMenu()">About Us</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
   </header>
   <main>
-    <h2 id="about-title">About Geo Hits</h2>
-    <div id="about">
-      <div id="about-headshot">
-        <img src="images/headshot.png" alt="Tiago's head shot">
-        <img src="images/headshot.png" alt="Daniel's head shot">
+    <section id="about">
+      <p class="sub-title">Learn More About</p>
+      <h1 class="title">GeoHits</h1>
+      <div class="section-container">
+        <div class="sub-container">
+          <div class="info-containers">
+            <div class="pictures">
+              <img src="images/headshot.png" alt="Tiago's head shot" class="info-pic">
+              <img src="images/headshot.png" alt="Daniel's head shot" class="info-pic">
+            </div>
+            <div class="details-container">
+              <div id="about-text">
+                <p>Welcome to GEO Hits, a website that allows users to enter a country and find the top trending song.
+                  If the user enjoys the song they can add it to their personal site based playlist. Geo Hits was created
+                  by <a href="https://wanghci-class.github.io/ppp-personal-professional-profile-dgstewart023/"><strong>Daniel Stewart</strong></a> and <a href="https://TiagoSilva4.github.io."><strong>Tiago Silva</strong></a>, two rising senior Computer Science majors studying at
+                  <a href="https://www.jmu.edu/cise/cs/index.shtml"><strong>James Madison University</strong></a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="about-text">
-        <p>Welcome to GEO Hits, a website that allows users to enter a country and find the top trending song.
-          If the user enjoys the song they can add it to their personal site based playlist. Geo Hits was created
-          by <a href="https://wanghci-class.github.io/ppp-personal-professional-profile-dgstewart023/">Daniel Stewart</a> and <a href="https://TiagoSilva4.github.io.">Tiago Silva</a>, two rising senior Computer Science majors studying at
-          <a href="https://www.jmu.edu/cise/cs/index.shtml">James Madison University</a>.</p>
-      </div>
-    </div>
+    </section>
   </main>
   <footer>
+    <nav role="footer">
+        <div class="navs-links-containers">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html">Song</a></li>
+            <li><a href="charts.html">Country Chart</a></li>
+            <li><a href="playlists.html">Playlist</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 GeoHits. All Rights Reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

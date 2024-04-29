@@ -1,8 +1,11 @@
-@media screen and (max-width: 1400px) {
-    .sub-containers {
+@media screen and (max-width: 1500px) {
+    .info-containers {
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
+
+
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
@@ -22,6 +25,10 @@
     }
     .info-containers {
         margin-top: 0;
+    }
+    .pictures {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -43,9 +50,6 @@
     }
     footer {
         height: 40vh;
-    }
-    .info-containers, btn-container {
-        flex-wrap: wrap;
     }
     .nav-links li a {
         font-size: 1rem;

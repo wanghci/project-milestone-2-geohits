@@ -1,26 +1,74 @@
-#about {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+/* Home Page */
+
+section {
+    padding-top: 4vh;
+    height: 65vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;  
 }
 
-#about-headshot {
+#about {
+    position: relative;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.sub-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-containers, .sub-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+}
+
+.info-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-pic {
+    border-radius: 2rem;
+    height: 350px;
+    width: 350px;
+    margin: auto 0;
+}
+
+.details-container {
+    padding: 1rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    overflow: auto;
 }
 
 #about-text {
-    margin: 30px;
+    font-size: large;
 }
 
-#about-title {
-    text-align: center;
-    font-size: 3rem;
+.pictures {
+    display: flex;
 }
 
-@media (max-width: 600px) {
-    #about-headshot {
-        flex-direction: column;
-    }
+.details-container {
+    max-height: 20rem;
 }
