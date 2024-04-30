@@ -12,13 +12,9 @@
         const authCode = urlParams.get("code");
 
         // If there is no code, redirect to the login page
-        if (!authCode) {
+        if (authCode) {
             console.log("No authorization code found!");
-            window.location.href = "index.html";
-        }
-
-        // (2) Get the code verifier from local storage
-        const codeVerifier = localStorage.getItem("demo_code_verifier");
+            const codeVerifier = localStorage.getItem("demo_code_verifier");
 
         // If there is no code verifier, redirect to the login page
         if (!codeVerifier) {
@@ -50,6 +46,7 @@
         }
 
         getAccessToken(); // Call the function
+        }
 
         // (1) Check to see if there is already an access token in localStorage
 
