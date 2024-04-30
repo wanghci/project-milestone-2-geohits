@@ -55,6 +55,7 @@
         // Display the appropriate content based on the login status
         if (accessToken) {
             document.getElementById("home").hidden = false;
+            document.getElementById("log-out").hidden = false;
             console.log('show home')
         } else {
             document.getElementById("log-in").hidden = false;
