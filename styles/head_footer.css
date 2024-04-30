@@ -13,10 +13,6 @@ header {
     background: #8d3f9b;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 p {
     color: rgb(85, 85, 85);
 }
