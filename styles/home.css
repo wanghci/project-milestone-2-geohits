@@ -66,3 +66,7 @@ section {
     border-radius: 2rem;
     width: 12rem;
 }
+
+.submit {
+    display: none;
+}
