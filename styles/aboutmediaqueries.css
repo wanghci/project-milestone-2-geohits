@@ -5,53 +5,9 @@
     }
 }
 
-
-
 @media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
-    .section-container {
-        display: block;
-    }
-    section {
-        height: fit-content;
-    }
-    section {
-        margin: 0 5%;
-    }
-    .info-containers {
-        margin-top: 0;
-    }
     .pictures {
         flex-wrap: wrap;
         justify-content: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .logo {
-        font-size: 1.5rem;
-    }
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
-    .title {
-        font-size: 2rem;
-    }
-    footer nav {
-        height: fit-content;
-        margin-bottom: 1rem;
-    }
-    footer {
-        height: 40vh;
-    }
-    .nav-links li a {
-        font-size: 1rem;
     }
 }
