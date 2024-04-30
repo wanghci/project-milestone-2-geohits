@@ -2,10 +2,6 @@ section {
     height: 65vh;
 }
 
-#songs {
-    position: relative;
-}
-
 .info-containers {
     align-items: center;
     justify-content: center;

@@ -2,10 +2,6 @@ section {
     height: 80vh;
 }
 
-#home {
-    position: relative;
-}
-
 .sub-title {
     font-weight: 600;
     font-size: 1.75rem;
