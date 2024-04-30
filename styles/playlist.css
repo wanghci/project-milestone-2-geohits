@@ -1,53 +1,14 @@
 section {
-    padding-top: 4vh;
     height: 65vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content; 
-    gap: 4rem; 
-    height: 80%;
 }
 
 #about {
     position: relative;
 }
 
-.sub-title {
-    text-align: center;
-}
-
-.title {
-    font-size: 2rem;
-    text-align: center;
-}
-
 .info-containers {
-    display: flex;
-}
-
-.info-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
     flex-direction: column;
     align-items: center;
-}
-
-.info-pic {
-    border-radius: 2rem;
-    height: 350px;
-    width: 350px;
-    margin: auto 0;
-}
-
-.details-container {
-    padding: 1rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
 }
 
 #about-text {
