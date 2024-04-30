@@ -38,13 +38,13 @@ async function checkForCode() {
 
         console.log(data.access_token)
 
-        const playlist = await fetch("https://api.spotify.com/v1/browse/categories/toplists/playlists/${country}", {
+        const playlist = await fetch(`https://api.spotify.com/v1/browse/categories/toplists/playlists/${country}`, {
             headers: {
                 'Authorization': 'Bearer ' + data.access_token,
             },
         });
 
-        const data1 = await response.json();
+        const data1 = await playlist.json();
         console.log(data1)
 
     }
