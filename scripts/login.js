@@ -56,11 +56,12 @@
         if (accessToken) {
             document.getElementById("home").hidden = false;
             document.getElementById("log-out").hidden = false;
+            document.getElementById("log-in").hidden = true;
             console.log('show home')
         } else {
             document.getElementById("log-in").hidden = false;
-            // document.getElementById("home").hidden = false;
-            // document.getElementById("log-out").hidden = false;
+            document.getElementById("home").hidden = true;
+            document.getElementById("log-out").hidden = true;
             console.log("show log")
         }
 
