@@ -46,6 +46,10 @@ section {
     text-align: center;
 }
 
+#log-in {
+    margin-top: 2rem;
+}
+
 #log-in, #log-out {
     max-width: 20rem;
 }
