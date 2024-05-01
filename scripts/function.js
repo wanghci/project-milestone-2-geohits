@@ -16,7 +16,7 @@ document.getElementById("country-submit").addEventListener('click', async () => 
     img.alt = data[0].altSpellings[0];
     country_code = data[0].altSpellings[0];
 
-    const search = await fetch(`https://api.spotify.com/v1/search?q=top+${country}&type=playlist&limit=1&offset=0`, {
+    const search = await fetch(`https://api.spotify.com/v1/search?q=top+50+${country}&type=playlist&limit=1&offset=0`, {
             headers: {
                 'Authorization': 'Bearer ' + accessToken,
             },
@@ -24,11 +24,11 @@ document.getElementById("country-submit").addEventListener('click', async () => 
 
         let searchData = await search.json();
 
-        console.log(searchData)
-        console.log(searchData.playlists.items[0].images[0].url)
-        console.log(searchData.playlists.items[0].href)
+        // console.log(searchData)
+        // console.log(searchData.playlists.items[0].images[0].url)
+        // console.log(searchData.playlists.items[0].href)
         const playlistID = searchData.playlists.items[0].href
-        document.getElementById("song-pic").src = searchData.playlists.items[0].images[0].url
+        // document.getElementById("song-pic").src = searchData.playlists.items[0].images[0].url
 
         const playlist = await fetch(playlistID, {
             headers: {
@@ -39,6 +39,10 @@ document.getElementById("country-submit").addEventListener('click', async () => 
         let musicData = await playlist.json();
 
         console.log(musicData)
-        console.log(musicData.tracks.items[0].track.album.images[0].url)
+        // console.log(musicData.tracks.items[0].track.album.images[0].url)
         document.getElementById("song-pic").src = musicData.tracks.items[0].track.album.images[0].url
+        let caption = document.getElementById("song-cap")
+        caption.textContent = musicData.tracks.items[0].track.name + " - " + musicData.tracks.items[0].track.artists[0].name
+        // document.getElementById("song-cover").src = musicData.tracks.items[0].track.album.images[0].url
+
 });
