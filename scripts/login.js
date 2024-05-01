@@ -13,7 +13,7 @@
 
         // If there is no code, redirect to the login page
         if (authCode) {
-            console.log("No authorization code found!");
+            console.log("Authorization code found!");
             const codeVerifier = localStorage.getItem("demo_code_verifier");
 
         // If there is no code verifier, redirect to the login page
@@ -58,9 +58,9 @@
             document.getElementById("log-out").hidden = false;
             console.log('show home')
         } else {
-            // document.getElementById("log-in").hidden = false;
-            document.getElementById("home").hidden = false;
-            document.getElementById("log-out").hidden = false;
+            document.getElementById("log-in").hidden = false;
+            // document.getElementById("home").hidden = false;
+            // document.getElementById("log-out").hidden = false;
             console.log("show log")
         }
 
