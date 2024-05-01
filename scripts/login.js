@@ -58,9 +58,9 @@
             document.getElementById("log-out").hidden = false;
             console.log('show home')
         } else {
-            document.getElementById("log-in").hidden = false;
-            // document.getElementById("home").hidden = false;
-            // document.getElementById("log-out").hidden = false;
+            // document.getElementById("log-in").hidden = false;
+            document.getElementById("home").hidden = false;
+            document.getElementById("log-out").hidden = false;
             console.log("show log")
         }
 
