@@ -39,7 +39,7 @@
                 localStorage.setItem("demo_expiry_time", Date.now() + (data.expires_in * 1000));
 
                 // Redirect to the result page
-                window.location.href = "result.html";
+                window.location.href = "index.html";
             } catch (error) {
                 alert(error);
             }
@@ -58,9 +58,9 @@
             document.getElementById("log-out").hidden = false;
             console.log('show home')
         } else {
-            // document.getElementById("log-in").hidden = false;
-            document.getElementById("home").hidden = false;
-            document.getElementById("log-out").hidden = false;
+            document.getElementById("log-in").hidden = false;
+            // document.getElementById("home").hidden = false;
+            // document.getElementById("log-out").hidden = false;
             console.log("show log")
         }
 
