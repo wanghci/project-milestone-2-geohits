@@ -1,18 +1,6 @@
-section {
-    height: 65vh;
-}
-
 .info-containers {
     align-items: center;
     justify-content: center;
-}
-
-.details-container {
-    max-width: 25rem;
-}
-
-#song-facts {
-    list-style: none;
 }
 
 .song-list {
