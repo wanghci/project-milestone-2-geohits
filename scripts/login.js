@@ -1,5 +1,5 @@
         const clientId = "d548203f7ceb4dd6a56164a2e97c3f17";
-        const redirectUri = "https://wanghci.github.io/project-milestone-2-geohits/"; // Replace with your own URL
+        const redirectUri = "http://127.0.0.1:5500/project-milestone-2-geohits/index.html?"; // Replace with your own URL
         // const redirectUri = new URL("./landing.html", window.location.href).href; // Needed for demo, since it may be hosted elsewhere
 
         // check for code returned
@@ -10,7 +10,7 @@
 
         const urlParams = new URLSearchParams(window.location.search);
         const authCode = urlParams.get("code");
-
+        console.log(authCode)
         // If there is no code, redirect to the login page
         if (authCode) {
             console.log("Authorization code found!");
@@ -39,7 +39,7 @@
                 localStorage.setItem("demo_expiry_time", Date.now() + (data.expires_in * 1000));
 
                 // Redirect to the result page
-                window.location.href = "index.html";
+                // window.location.href = "index.html";
             } catch (error) {
                 alert(error);
             }
