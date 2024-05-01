@@ -1,7 +1,7 @@
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
 
 section {
@@ -44,4 +44,8 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+}
+
+#log-in, #log-out {
+    max-width: 20rem;
 }
