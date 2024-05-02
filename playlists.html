@@ -45,22 +45,27 @@
   </nav>
   </header>
   <main>
+    <template id="song-template">
+      <div class="details-container">
+        <img src="images/song.jpeg" alt="default song picture" class="info-pic" id="song-pic-0"><p id="name-song-0">song 1</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" type="button" id="deleteBtn">Remove From Playlist</button>
+        </div>
+      </div>
+    </template>
     <section id="home" hidden>
       <p class="sub-title">Welcome To Your</p>
       <h1 class="title">PlayList</h1>
       <div id="clear">
         <div class="info-containers">
           <div class="btn-container">
-            <button class="btn btn-color-2" type="button" onclick="''" id="clear-button">Clear Playlist</button>
+            <button class="btn btn-color-2" type="button" id="clear-button">Clear Playlist</button>
           </div>
         </div>
       </div>
       <div class="info-containers">
         <div class="details-container">
-          <div class="playlist">
-            <ul class="list">
-              <li><img src="images/song.jpeg" alt="default song picture"><p>song 1</p></li>
-            </ul>
+          <div id="song-list">
           </div>
         </div>
       </div>
@@ -104,7 +109,7 @@
   </footer>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/login.js"></script>
+  <script src="scripts/displayPlayList.js"></script>
   <script src="https://wanghci.github.io/spotify-api-tutorial/js/spotify.js"></script>
-  <script src="scripts/function.js"></script>
 </body>
 </html>
