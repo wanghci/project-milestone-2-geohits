@@ -1,7 +1,5 @@
-let country_code = "";
 let country = "";
-console.log(authCode)
-console.log(accessToken)
+
 document.getElementById("country-submit").addEventListener('click', async () => {
     country = document.querySelector(".search").value;
     console.log(country)
