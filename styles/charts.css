@@ -3,6 +3,11 @@
     justify-content: center;
 }
 
+.song-list .info-pic {
+    height: 150px;
+    width: 150px;
+}
+
 .song-list {
     list-style-type: none;
 }
