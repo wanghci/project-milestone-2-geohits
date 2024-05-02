@@ -3,11 +3,16 @@
     justify-content: center;
 }
 
-.song-list .info-pic {
-    height: 150px;
-    width: 150px;
-}
-
 .song-list {
     list-style-type: none;
+}
+
+.five-songs .details-container {
+    margin-top: 0.55rem;
+    margin-bottom: 0.5rem;
+}
+
+.five-songs .info-pic {
+    height: 150px;
+    width: 150px;
 }

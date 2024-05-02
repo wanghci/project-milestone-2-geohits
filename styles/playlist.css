@@ -15,4 +15,12 @@
     list-style: none;
 }
 
+#song-list {
+    display: flex;
+    flex-direction: column;
+}
 
+#song-list .details-container{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+} 
