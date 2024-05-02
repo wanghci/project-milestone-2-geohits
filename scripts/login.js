@@ -74,6 +74,9 @@ async function startPage() {
         localStorage.removeItem("demo_refresh_token");
         localStorage.removeItem("demo_expiry_time");
         localStorage.removeItem("demo_code_verifier");
+        localStorage.removeItem("country-song");
+        localStorage.removeItem("countryCard");
+        localStorage.removeItem("countryChart");
         window.location.reload();
     });
 }
