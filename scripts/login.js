@@ -77,6 +77,7 @@ async function startPage() {
         localStorage.removeItem("country-song");
         localStorage.removeItem("countryCard");
         localStorage.removeItem("countryChart");
+        localStorage.removeItem("playList");
         window.location.reload();
     });
 }
