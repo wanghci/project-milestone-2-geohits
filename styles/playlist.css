@@ -3,10 +3,6 @@
     align-items: center;
 }
 
-#about-text {
-    font-size: large;
-}
-
 .pictures {
     display: flex;
 }
@@ -24,3 +20,7 @@
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 } 
+
+#name-song-0 {
+    font-size: 2rem;
+}
