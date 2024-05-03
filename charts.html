@@ -24,10 +24,10 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav" role="secondary">
+    <nav id="hamburger-nav" role="ios-navigation">
       <div class="logo">GeoHits</div>
       <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
+          <div class="hamburger-icon" onclick="toggleMenu()" tabindex="0">
               <span></span>
               <span></span>
               <span></span>
@@ -46,8 +46,8 @@
   </header>
   <main>
     <section id="home" hidden>
-      <p class="sub-title">Top Five Trending Songs In</p>
-      <h1 class="title">Country</h1>
+      <h1 class="title">Top Five Trending Songs In</h1>
+      <h2 class="sub-title">Country</h2>
       <div class="info-containers">
         <div class="details-container-1">
           <div class="details-container">
@@ -57,23 +57,23 @@
         <div class="details-container">
           <div class="five-songs">
             <div class="details-container">
-              <p class="sub-title">1</p>
+              <h2 class="sub-title">1</h2>
               <img src="images/song.jpeg" alt="trending song 1" class="info-pic" id="songpic1"><p id="song1">song 1</p>
             </div>
             <div class="details-container">
-              <p class="sub-title">2</p>
+              <h2 class="sub-title">2</h2>
               <img src="images/song.jpeg" alt="trending song 2" class="info-pic" id="songpic2"><p id="song2">song 2</p>
             </div>
             <div class="details-container">
-              <p class="sub-title">3</p>
+              <h2 class="sub-title">3</h2>
               <img src="images/song.jpeg" alt="trending song 3" class="info-pic" id="songpic3"><p id="song3">song 3</p>
             </div>
             <div class="details-container">
-              <p class="sub-title">4</p>
+              <h2 class="sub-title">4</h2>
               <img src="images/song.jpeg" alt="trending song 4" class="info-pic" id="songpic4"><p id="song4">song 4</p>
             </div>
             <div class="details-container">
-              <p class="sub-title">5</p>
+              <h2 class="sub-title">5</h2>
               <img src="images/song.jpeg" alt="trending song 5" class="info-pic" id="songpic5"><p id="song5">song 5</p>
             </div>
           </div>
@@ -84,9 +84,9 @@
       <div class="info-containers">
         <div class="details-container">
           <p class="section_text">Please Log In To Your</p>
-          <h1 class="title">Spotify</h1>
+          <h2 class="title">Spotify</h2>
           <div class="btn-container">
-            <button class="btn btn-color-1" type="button" onclick="''" id="login-button">Login</button>
+            <button class="btn btn-color-1" type="button" id="login-button">Login</button>
           </div>
         </div>
       </div>
@@ -95,16 +95,16 @@
       <div class="info-containers">
         <div class="details-container">
           <p class="section_text">Log Out Of Your</p>
-          <h1 class="title">Spotify</h1>
+          <h2 class="title">Spotify</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2" type="button" onclick="''" id="logout-button">Log Out</button>
+            <button class="btn btn-color-2" type="button" id="logout-button">Log Out</button>
           </div>
         </div>
       </div>
     </div>
   </main>
   <footer>
-    <nav role="footer">
+    <nav role="footer-navigation">
         <div class="navs-links-containers">
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>

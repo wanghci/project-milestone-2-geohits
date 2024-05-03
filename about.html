@@ -25,10 +25,10 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav" role="secondary">
+    <nav id="hamburger-nav" role="ios-navigation">
       <div class="logo">GeoHits</div>
       <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
+          <div class="hamburger-icon" onclick="toggleMenu()" tabindex="0">
               <span></span>
               <span></span>
               <span></span>
@@ -47,8 +47,8 @@
   </header>
   <main>
     <section id="home" hidden>
-      <p class="sub-title">Learn More About</p>
-      <h1 class="title">GeoHits</h1>
+      <h1 class="title">Learn More About</h1>
+      <h2 class="sub-title">GeoHits</h2>
           <div class="info-containers">
             <div class="pictures">
               <img src="images/headshot.png" alt="Tiago's head shot" class="info-pic">
@@ -68,9 +68,9 @@
       <div class="info-containers">
         <div class="details-container">
           <p class="section_text">Please Log In To Your</p>
-          <h1 class="title">Spotify</h1>
+          <h2 class="title">Spotify</h2>
           <div class="btn-container">
-            <button class="btn btn-color-1" type="button" onclick="''" id="login-button">Login</button>
+            <button class="btn btn-color-1" type="button" id="login-button">Login</button>
           </div>
         </div>
       </div>
@@ -79,16 +79,16 @@
       <div class="info-containers">
         <div class="details-container">
           <p class="section_text">Log Out Of Your</p>
-          <h1 class="title">Spotify</h1>
+          <h2 class="title">Spotify</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2" type="button" onclick="''" id="logout-button">Log Out</button>
+            <button class="btn btn-color-2" type="button" id="logout-button">Log Out</button>
           </div>
         </div>
       </div>
     </div>
   </main>
   <footer>
-    <nav role="footer">
+    <nav role="footer-navigation">
       <div class="navs-links-containers">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>

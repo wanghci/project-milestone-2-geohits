@@ -75,7 +75,7 @@ async function startPage() {
         localStorage.removeItem("demo_expiry_time");
         localStorage.removeItem("demo_code_verifier");
         localStorage.removeItem("country-song");
-        localStorage.removeItem("countryCard");
+        localStorage.removeItem("currentCard");
         localStorage.removeItem("countryChart");
         localStorage.removeItem("playList");
         window.location.reload();
