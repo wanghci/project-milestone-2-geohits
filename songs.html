@@ -25,10 +25,10 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav" role="secondary">
+    <nav id="hamburger-nav" role="ios-navigation">
       <div class="logo">GeoHits</div>
       <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
+          <div class="hamburger-icon" onclick="toggleMenu()" tabindex="0">
               <span></span>
               <span></span>
               <span></span>
@@ -48,7 +48,7 @@
   <main>
     <section id="home" hidden>
       <p class="sub-title">Information About Your Trending</p>
-      <h1 class="title">Song</h1>
+      <h2 class="title">Song</h2>
           <div class="info-containers">
             <div class="details-container-pic">
               <img id="song-cover" src="images/songcover.jpeg" alt="default song cover" class="info-pic">
@@ -68,7 +68,7 @@
       <div class="info-containers">
         <div class="details-container">
           <p class="section_text">Please Log In To Your</p>
-          <h1 class="title">Spotify</h1>
+          <h2 class="title">Spotify</h2>
           <div class="btn-container">
             <button class="btn btn-color-1" type="button" onclick="''" id="login-button">Login</button>
           </div>
@@ -79,7 +79,7 @@
       <div class="info-containers">
         <div class="details-container">
           <p class="section_text">Log Out Of Your</p>
-          <h1 class="title">Spotify</h1>
+          <h2 class="title">Spotify</h2>
           <div class="btn-container">
             <button class="btn btn-color-2" type="button" onclick="''" id="logout-button">Log Out</button>
           </div>
@@ -88,7 +88,7 @@
     </div>
   </main>
   <footer>
-    <nav role="footer">
+    <nav role="footer-navigation">
       <div class="navs-links-containers">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>

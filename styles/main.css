@@ -53,3 +53,7 @@ section {
 #log-in, #log-out {
     max-width: 20rem;
 }
+
+.sr-only {
+    display: none;
+}
