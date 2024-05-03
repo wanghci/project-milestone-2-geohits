@@ -13,13 +13,13 @@ section {
     height: 80%;
 }
 
-.sub-title {
+.title {
     text-align: center;
 }
 
-.title {
-    font-size: 2rem;
+.sub-title {
     text-align: center;
+    font-size: 2rem;
 }
 
 .info-containers {
