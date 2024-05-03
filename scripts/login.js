@@ -3,19 +3,16 @@ const redirectUri = "https://wanghci.github.io/project-milestone-2-geohits/";// 
 
 const urlParams = new URLSearchParams(window.location.search);
 const authCode = urlParams.get("code");
-console.log(authCode)
 let accessToken = "";
 
 async function startPage() { 
     
     // If there is no code, redirect to the login page
     if (authCode) {
-        console.log("Authorization code found!");
         const codeVerifier = localStorage.getItem("demo_code_verifier");
 
         // If there is no code verifier, redirect to the login page
         if (!codeVerifier) {
-            console.log("No code verifier found!");
             window.location.href = "index.html";
         }
 
@@ -23,9 +20,7 @@ async function startPage() {
         
         const getAccessToken = async () => {
             try {
-                console.log(authCode)
                 const data = await getToken(clientId, redirectUri, authCode, codeVerifier);
-                console.log(data);
 
                 // Clear the code verifier from local storage
                 localStorage.removeItem("demo_code_verifier");
@@ -53,10 +48,8 @@ async function startPage() {
     if (accessToken) {
         document.getElementById("home").hidden = false;
         document.getElementById("log-out").hidden = false;
-        console.log('show home')
     } else {
         document.getElementById("log-in").hidden = false;
-        console.log("show log")
     }
 
     // (2) When the login button is clicked, generate a code challenge and request an authorization code

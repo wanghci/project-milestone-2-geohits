@@ -8,6 +8,9 @@ document.getElementById("country-submit").addEventListener('click', async () => 
     country = document.querySelector(".search").value;
     
     let response = await fetch("https://restcountries.com/v3.1/name/" + country);
+    if (response.status == 404) {
+        alert("Please Enter Valid Country.")
+    }
     let data = await response.json();
 
     const search = await fetch(`https://api.spotify.com/v1/search?q=top+50+${country}&type=playlist&limit=1&offset=0`, {
