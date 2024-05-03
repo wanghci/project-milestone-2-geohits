@@ -16,4 +16,5 @@ document.getElementById("addToPlayList").addEventListener("click", function(even
     playListInfo.push(song);
     localStorage.setItem("playList", JSON.stringify(playListInfo));
     console.log(localStorage.getItem('playList'));
+    alert("Song Added To Playlist!")
 });
