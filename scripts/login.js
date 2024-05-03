@@ -1,5 +1,5 @@
 const clientId = "d548203f7ceb4dd6a56164a2e97c3f17";
-const redirectUri = "https://wanghci.github.io/project-milestone-2-geohits/index.html";// Replace with your own URL
+const redirectUri = "https://wanghci.github.io/project-milestone-2-geohits/";// Replace with your own URL
 
 const urlParams = new URLSearchParams(window.location.search);
 const authCode = urlParams.get("code");
